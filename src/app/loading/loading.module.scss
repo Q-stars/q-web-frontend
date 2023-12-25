@@ -1,0 +1,30 @@
+.loadingContainer {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  .progressBarContainer {
+    color: #000;
+    font-family: var(--font-cormorant);
+    font-size: 4rem;
+  }
+}
+
+.preload {
+  position: absolute;
+  overflow: hidden;
+  left: -9999px;
+  top: -9999px;
+  height: 1px;
+  width: 1px;
+}

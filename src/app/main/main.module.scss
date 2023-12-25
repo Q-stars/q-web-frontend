@@ -1,0 +1,38 @@
+.carouselContainer {
+  perspective: 2000px; /* 视距，可以根据需要调整 */
+  perspective-origin: 67% -15%; /* 调整透视原点 */
+
+  width: 71.94%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  transform: skewY(-15deg); /* Updated skew angle to 45 degrees */
+  transition: transform 0.5s ease;
+}
+
+.carouselItem {
+  // flex: 1;
+  flex-shrink: 0;
+
+  width: 31.5rem;
+  height: 30.3rem;
+  transform: skewY(30deg);
+  transition: transform 0.5s ease;
+  opacity: 0.4;
+
+  margin: 0 -17rem;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+
+  &:hover {
+    transform: skewY(30deg) translateY(-100%);
+  }
+}
+
+.carouselItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

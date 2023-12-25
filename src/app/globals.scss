@@ -1,0 +1,59 @@
+@tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #fff;
+}
+
+/* Default root font size */
+html {
+  font-size: 10px;
+}
+
+/* Adjust root font size for screens larger than 1700px (typical desktops) */
+@media only screen and (min-width: 2200px) {
+  html {
+    font-size: 16px; /* Adjust as needed */
+  }
+}
+
+/* Adjust root font size for screens between 1200px and 1800px */
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+  html {
+    font-size: 10.8px; /* 12px / 1.2 = 10.8px */
+  }
+}
+
+/* Adjust root font size for screens between 992px and 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 9px; /* 10px / 1.2 = 9px */
+  }
+}
+
+/* Adjust root font size for screens smaller than 991px (typical tablets and mobiles) */
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 8px; /* 10px / 1.2^2 = 8px */
+  }
+}

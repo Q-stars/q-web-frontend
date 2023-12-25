@@ -1,0 +1,80 @@
+.aboutBg {
+  /* Set left background image */
+  background-image: url('/about_bg1.jpg');
+  background-position: left top; /* Left top corner */
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* Add right background image using comma-separated values */
+  background-image: url('/about_bg1.jpg'), url('/about_bg2.jpg');
+  background-position: left top, right top; /* Left top corner, Right top corner */
+  background-size: 31.5rem 52.6rem, 32.5rem 52.5rem; /* Set specific size for each image */
+  background-repeat: no-repeat, no-repeat;
+}
+
+.whitepaperBg {
+  /* Set left background image */
+  background-image: url('/whitepaper_bg.jpg');
+  background-position: left top; /* Left top corner */
+  background-size: 58.3rem 143.2rem;
+  background-repeat: no-repeat;
+}
+
+.sectionText {
+  padding: 13.2rem 33rem 3.7rem 33rem;
+
+  section {
+    margin-top: 4.8rem;
+  }
+
+  h1 {
+    color: #000;
+
+    font-family: var(--font-cormorant);
+    font-size: 4rem;
+  }
+
+  h2 {
+    color: #000;
+
+    font-family: var(--font-cormorant);
+    font-size: 3.6rem;
+  }
+
+  h3 {
+    color: #000;
+
+    font-family: var(--font-cormorant);
+    font-size: 2.4rem;
+  }
+
+  h4 {
+    color: #000;
+
+    font-family: var(--font-cormorant);
+    font-size: 2rem;
+
+    margin: 1.2rem 0;
+  }
+
+  p {
+    color: #000;
+
+    text-align: justify;
+
+    font-family: var(--font-cormorant);
+    font-size: 2rem;
+  }
+
+  p + p {
+    margin-bottom: 1.2rem;
+  }
+
+  img {
+    margin: 1.2rem 0;
+  }
+}
+
+.textCenter {
+  text-align: center;
+}
