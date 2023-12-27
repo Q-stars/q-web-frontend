@@ -10,6 +10,7 @@
   background-position: left top, right top; /* Left top corner, Right top corner */
   background-size: 31.5rem 52.6rem, 32.5rem 52.5rem; /* Set specific size for each image */
   background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed;
 }
 
 .whitepaperBg {

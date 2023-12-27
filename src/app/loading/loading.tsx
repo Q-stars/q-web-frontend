@@ -7,7 +7,7 @@ import styles from './loading.module.scss'
 
 const totalImages = 23
 let timegap = 2500
-let speed = 5
+let speed = 10
 
 const Loading = () => {
   const [progress, setProgress] = useState(0)
