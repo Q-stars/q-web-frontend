@@ -10,7 +10,7 @@ let timegap = 2500
 let speed = 10
 
 const Loading = () => {
-  const videoRef = useRef(null)
+  const videoRef = useRef<HTMLVideoElement | null>(null)
 
   const [progress, setProgress] = useState(0)
   //   const [fakeProgress, setFakeProgress] = useState(0)
