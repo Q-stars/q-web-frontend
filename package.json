@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "mathjax": "^3.2.2",
+    "mathjax3-react": "^1.2.0",
     "next": "14.0.4",
     "next-videos": "^1.4.1",
     "react": "^18",
