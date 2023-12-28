@@ -35,7 +35,11 @@ const CloseIcon = () => (
 const Header = ({ index }: { index?: string }) => {
   const menuTexts = ['About', 'Whitepaper', 'charter', 'Research', 'Doc']
   const isMobile = typeof window !== 'undefined' && window.innerWidth <= 820
-  const [menuOpen, setMenuOpen] = useState(isMobile ? false : true)
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  useEffect(() => {
+    setMenuOpen(isMobile ? false : true)
+  }, [isMobile])
 
   const handleMenuIconClick = () => {
     setMenuOpen(!menuOpen)
@@ -75,7 +79,7 @@ const Header = ({ index }: { index?: string }) => {
           <CloseIcon />
         </div>
         <ul
-          className={`${styles.menuList} ${styles.mobileHidden}`}
+          className={`${styles.menuList}`}
           style={menuOpen ? { display: 'flex' } : { display: 'none' }}
           onClick={(e) => handleMenuListClick(e)}
         >

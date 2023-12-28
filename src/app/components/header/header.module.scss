@@ -58,6 +58,8 @@
     right: 3.6rem;
     top: 2rem;
     z-index: 1000;
+
+    background-color: #fff;
   }
 
   .header {
@@ -74,6 +76,7 @@
     }
 
     .menuList {
+      display: none;
       position: fixed;
       left: 0;
       top: 0;

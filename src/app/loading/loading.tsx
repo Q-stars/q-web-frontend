@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 
 import styles from './loading.module.scss'
@@ -10,6 +10,8 @@ let timegap = 2500
 let speed = 10
 
 const Loading = () => {
+  const videoRef = useRef(null)
+
   const [progress, setProgress] = useState(0)
   //   const [fakeProgress, setFakeProgress] = useState(0)
   const [animationDone, setAnimationDone] = useState(false)
@@ -23,6 +25,17 @@ const Loading = () => {
   }
 
   const [imagesLoaded, setImagesLoaded] = useState(0)
+
+  const handlePlay = () => {
+    if (videoRef.current) {
+      videoRef.current
+        .play()
+        .then(() => {
+          // video start
+        })
+        .catch((error) => {})
+    }
+  }
 
   const handleImageLoad = () => {
     console.log('set', imagesLoaded)
@@ -73,15 +86,17 @@ const Loading = () => {
   }, [imagesLoaded, router, animationDone])
 
   return (
-    <div className={styles.loadingContainer}>
+    <div className={styles.loadingContainer} onClick={handlePlay}>
       <div className={styles.videoContainer}>
         <video
+          ref={videoRef}
           width="236"
           height="282"
           src={require('../../../public/loading.mp4')}
           autoPlay
           muted
           loop
+          playsInline
         />
       </div>
       <div className={styles.progressBarContainer}>{progress}%</div>
