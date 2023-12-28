@@ -5,8 +5,8 @@ import Header from '../components/header/header'
 import styles from './main.module.scss'
 
 let imagePaths: string[] = []
-for (let i = 0; i < 23; i++) {
-  imagePaths.push(`/brains/${i + 1}.jpg`)
+for (let i = 23; i > 0; i--) {
+  imagePaths.push(`/brains/${i}.jpg`)
 }
 
 export default function Page() {
