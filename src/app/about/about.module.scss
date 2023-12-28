@@ -8,7 +8,7 @@
   /* Add right background image using comma-separated values */
   background-image: url('/about_bg1.jpg'), url('/about_bg2.jpg');
   background-position: left 10rem, right 10rem; /* Left top corner, Right top corner */
-  background-size: 31.5rem 52.6rem, 32.5rem 52.5rem; /* Set specific size for each image */
+  background-size: 34rem 52.6rem, 33.9rem 52.5rem; /* Set specific size for each image */
   background-repeat: no-repeat, no-repeat;
   background-attachment: fixed;
 }
@@ -17,7 +17,7 @@
   /* Set left background image */
   background-image: url('/whitepaper_bg.jpg');
   background-position: left top; /* Left top corner */
-  background-size: 58.3rem 143.2rem;
+  background-size: 55.4rem 121.9rem;
   background-repeat: no-repeat;
 }
 
@@ -100,8 +100,8 @@
 
     /* Add right background image using comma-separated values */
     background-image: url('/about_bg1.jpg'), url('/about_bg2.jpg');
-    background-size: 15.7rem 26.3rem, 15.7rem 26.3rem; /* Set specific size for each image */
-    background-position: -10rem 10rem, calc(100% - -8rem) 10rem;
+    background-size: 17rem 26.3rem, 17rem 26.3rem; /* Set specific size for each image */
+    background-position: -10rem 10rem, calc(100% + 10rem) 10rem;
   }
 
   .sectionText {
