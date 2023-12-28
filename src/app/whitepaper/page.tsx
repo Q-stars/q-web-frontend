@@ -19,6 +19,8 @@ const formula = (formu: string) => (
 )
 
 export default function Page() {
+  if (typeof window === 'undefined') return
+
   return (
     <div>
       <Header index={'whitepaper'} />
