@@ -11,7 +11,7 @@ for (let i = 0; i < 23; i++) {
 
 export default function Page() {
   return (
-    <div>
+    <div className={styles.body}>
       <Header />
       <div className={styles.carouselContainer}>
         {imagePaths.map((item, index) => (
