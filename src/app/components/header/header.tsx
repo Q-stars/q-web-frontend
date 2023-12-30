@@ -85,16 +85,20 @@ const Header = ({ index }: { index?: string }) => {
         >
           {menuTexts.map((menuText) => {
             return (
-              <li
-                key={menuText}
-                className={
-                  index && index.toUpperCase() === menuText.toUpperCase()
-                    ? styles.highlight
-                    : ''
-                }
-              >
-                <a href={`/${menuText.toLowerCase()}`}>{menuText}</a>
-              </li>
+              <>
+                <a href={`/${menuText.toLowerCase()}`}>
+                  <li
+                    key={menuText}
+                    className={
+                      index && index.toUpperCase() === menuText.toUpperCase()
+                        ? styles.highlight
+                        : ''
+                    }
+                  >
+                    {menuText}
+                  </li>
+                </a>
+              </>
             )
           })}
         </ul>

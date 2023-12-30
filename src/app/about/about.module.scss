@@ -26,6 +26,7 @@
 
   section {
     margin-top: 4.8rem;
+    margin-top: 9rem;
   }
 
   h1 {
@@ -40,6 +41,8 @@
 
     font-family: var(--font-cormorant);
     font-size: 3.6rem;
+
+    margin-bottom: 2.4rem;
   }
 
   h3 {
@@ -184,5 +187,12 @@
 
     display: inline-block;
     vertical-align: middle;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .textContent {
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
