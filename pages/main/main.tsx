@@ -11,7 +11,7 @@ for (let i = 23; i > 0; i--) {
 
 const LoadingPage = () => {
   const [loading, setLoading] = useState(true)
-  const [visibleIndex, setVisibleIndex] = useState(0)
+  const [visibleIndex, setVisibleIndex] = useState(-1)
 
   useEffect(() => {
     const timer = setInterval(() => {
