@@ -44,7 +44,9 @@ const LoadingPage = () => {
                 !loading ? styles.skew : ''
               } ${loading && index > visibleIndex ? styles.hidden : ''}`}
             >
-              <img src={item} alt={`Photo ${index + 1}`} />
+              {index <= visibleIndex && (
+                <img src={item} alt={`Photo ${index + 1}`} />
+              )}
             </div>
           ))}
         </div>
