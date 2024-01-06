@@ -13,7 +13,7 @@ const Layout = ({ children }: { children: ReactNode }) => (
       <motion.div
         initial={{ opacity: 0, x: '-100%' }}
         animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: '100%' }}
+        exit={{ opacity: 0, x: '100%', display: 'none' }}
         transition={{ duration: 0.5 }} // Adjust the duration as needed
       >
         {children}
