@@ -11,9 +11,10 @@ const Layout = ({ children }: { children: ReactNode }) => (
     <Header />
     <div className={styles.headerMargin}>
       <motion.div
-        initial={{ x: '-100%', opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        exit={{ x: '100%', opacity: 0 }}
+        initial={{ opacity: 0, x: '-100%' }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: '100%' }}
+        transition={{ duration: 0.5 }} // Adjust the duration as needed
       >
         {children}
       </motion.div>
