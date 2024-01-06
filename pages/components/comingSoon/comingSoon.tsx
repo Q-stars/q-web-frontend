@@ -6,9 +6,11 @@ import styles from './coming.module.scss'
 
 const CoomingSoon = ({ index }: { index: string }) => {
   return (
-    <Layout>
-      <div className={styles.text}>Comming Soon...</div>
-    </Layout>
+    <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
+      <Layout>
+        <div className={styles.text}>Comming Soon...</div>
+      </Layout>
+    </div>
   )
 }
 

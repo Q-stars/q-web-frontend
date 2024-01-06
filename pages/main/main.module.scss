@@ -26,6 +26,7 @@
 }
 
 .carouselItem {
+  opacity: 0;
   flex-shrink: 0;
 
   width: 31.5rem;
@@ -70,5 +71,4 @@
 
 .hidden {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
 }

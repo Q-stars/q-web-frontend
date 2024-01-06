@@ -24,7 +24,7 @@ const LoadingPage = () => {
           return prevIndex
         }
       })
-    }, 200) // Set the time interval between each photo appearance
+    }, 43) // Set the time interval between each photo appearance
 
     return () => clearInterval(timer)
   }, [])
