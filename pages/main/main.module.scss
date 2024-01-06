@@ -18,8 +18,11 @@
   align-items: center;
   margin: 0 auto;
 
-  transform: skewY(-15deg) translate(0px, -8rem); /* Updated skew angle to 45 degrees */
-  transition: transform 0.5s ease;
+  transition: all 0.5s ease;
+
+  &.skew {
+    transform: skewY(-15deg) translate(0px, -8rem); /* Updated skew angle to 45 degrees */
+  }
 }
 
 .carouselItem {
@@ -33,11 +36,14 @@
   height: 16vw;
   margin: 0 -9.4vw;
 
-  transform: skewY(30deg);
   transition: transform 0.5s ease;
   opacity: 0.4;
 
   border: 1px solid rgba(0, 0, 0, 0.8);
+
+  &.skew {
+    transform: skewY(30deg);
+  }
 
   &:hover {
     transform: skewY(30deg) translateY(-20%);
@@ -60,4 +66,9 @@
     height: 24vw;
     margin: 0 -12vw;
   }
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
