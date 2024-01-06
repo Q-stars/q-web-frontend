@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Layout from '@/components/layout'
 import styles from './main.module.scss'
 
@@ -12,22 +12,37 @@ for (let i = 23; i > 0; i--) {
 const LoadingPage = () => {
   const [loading, setLoading] = useState(true)
   const [visibleIndex, setVisibleIndex] = useState(-1)
+  const timerRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
-    const timer = setInterval(() => {
+    timerRef.current = setInterval(() => {
       setVisibleIndex((prevIndex) => {
         if (prevIndex < imagePaths.length - 1) {
           return prevIndex + 1
         } else {
           setLoading(false)
-          clearInterval(timer)
           return prevIndex
         }
       })
-    }, 43) // Set the time interval between each photo appearance
+    }, 43)
 
-    return () => clearInterval(timer)
+    return () => {
+      if (timerRef.current !== null) {
+        clearInterval(timerRef.current)
+      }
+    }
   }, [])
+
+  const imageElements = imagePaths.map((item, index) => (
+    <div
+      key={index}
+      className={`${styles.carouselItem} ${!loading ? styles.skew : ''} ${
+        loading && index > visibleIndex ? styles.hidden : ''
+      }`}
+    >
+      {index <= visibleIndex && <img src={item} alt={`Photo ${index + 1}`} />}
+    </div>
+  ))
 
   return (
     <Layout>
@@ -37,18 +52,7 @@ const LoadingPage = () => {
             !loading ? styles.skew : ''
           }`}
         >
-          {imagePaths.map((item, index) => (
-            <div
-              key={index}
-              className={`${styles.carouselItem} ${
-                !loading ? styles.skew : ''
-              } ${loading && index > visibleIndex ? styles.hidden : ''}`}
-            >
-              {index <= visibleIndex && (
-                <img src={item} alt={`Photo ${index + 1}`} />
-              )}
-            </div>
-          ))}
+          {imageElements}
         </div>
       </div>
     </Layout>
