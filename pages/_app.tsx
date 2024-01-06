@@ -17,17 +17,13 @@ const urbanist = Urbanist({
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
-    <div className={`${cormorant.variable} ${urbanist.variable}`}>
+    <div>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
-      <AnimatePresence
-        mode="wait"
-        initial={false}
-        onExitComplete={() => window.scrollTo(0, 0)}
-      >
+      <div className={`${cormorant.variable} ${urbanist.variable}`}>
         <Component {...pageProps} key={router.asPath} />;
-      </AnimatePresence>
+      </div>
     </div>
   )
 }
