@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app'
 import { Cormorant, Urbanist } from 'next/font/google'
+import Head from 'next/head'
 import { AnimatePresence } from 'framer-motion'
 
 import './globals.scss'
@@ -17,6 +18,9 @@ const urbanist = Urbanist({
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <div className={`${cormorant.variable} ${urbanist.variable}`}>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Head>
       <AnimatePresence
         mode="wait"
         initial={false}
