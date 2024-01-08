@@ -1,7 +1,6 @@
 import { AppProps } from 'next/app'
 import { Cormorant, Urbanist } from 'next/font/google'
 import Head from 'next/head'
-import { AnimatePresence } from 'framer-motion'
 
 import './globals.scss'
 
@@ -20,6 +19,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     <div>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className={`${cormorant.variable} ${urbanist.variable}`}>
         <Component {...pageProps} key={router.asPath} />;

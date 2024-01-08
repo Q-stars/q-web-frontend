@@ -9,6 +9,22 @@ import Layout from '@/components/layout'
 
 import styles from '../about/about.module.scss'
 
+import Math8 from '/public/math/math_8.jpg'
+import Math9 from '/public/math/math_9.jpg'
+import Math10 from '/public/math/math_10.jpg'
+import Math11 from '/public/math/math_11.jpg'
+import Math12 from '/public/math/math_12.jpg'
+import Math13 from '/public/math/math_13.jpg'
+import Math2 from '/public/math/math_2.jpg'
+import Math3 from '/public/math/math_3.jpg'
+import Math4 from '/public/math/math_4.jpg'
+import Math5 from '/public/math/math_5.jpg'
+import Math14 from '/public/math/math_14.jpg'
+import Math15 from '/public/math/math_15.jpg'
+import Math16 from '/public/math/math_16.jpg'
+import Math17 from '/public/math/math_17.jpg'
+import Math18 from '/public/math/math_18.jpg'
+
 const subscript = (note1: string, note2: string) =>
   formula(`${note1}_{${note2}}`)
 
@@ -259,7 +275,7 @@ export default function Page() {
               We denote the dataset as
               <Image
                 className={styles.inline}
-                src="/math/math_8.jpg"
+                src={Math8}
                 alt="Math formula"
                 width="145"
                 height="64"
@@ -272,7 +288,7 @@ export default function Page() {
             </p>
             <Image
               className={styles.inline}
-              src="/math/math_9.jpg"
+              src={Math9}
               alt="Math formula"
               width="264"
               height="78"
@@ -280,7 +296,7 @@ export default function Page() {
             <p>The label prediction loss can be framed as</p>
             <Image
               className={styles.inline}
-              src="/math/math_10.jpg"
+              src={Math10}
               alt="Math formula"
               width="264"
               height="78"
@@ -288,7 +304,7 @@ export default function Page() {
             <p>And the overall loss is framed as</p>
             <Image
               className={styles.inline}
-              src="/math/math_11.jpg"
+              src={Math11}
               alt="Math formula"
               width="264"
               height="78"
@@ -337,7 +353,7 @@ export default function Page() {
             </p>
             <Image
               className={styles.inline}
-              src="/math/math_12.jpg"
+              src={Math12}
               alt="Math formula"
               width="224"
               height="63"
@@ -399,23 +415,13 @@ export default function Page() {
               {subscript('D', 'i')} is then computed as the summation of utility
               values of all models that utilizes {subscript('D', 'i')}, which is
             </p>
-            <Image
-              src="/math/math_13.jpg"
-              alt="Math formula"
-              width="120"
-              height="114"
-            />
+            <Image src={Math13} alt="Math formula" width="120" height="114" />
             <p className={styles.inlineRow}>
               Let T be the total number of tokens allocated to data
               contributors. Tokens allocated to contributors of{' '}
               {subscript('D', 'i')} is
             </p>
-            <Image
-              src="/math/math_2.jpg"
-              alt="Math formula"
-              width="120"
-              height="114"
-            />
+            <Image src={Math2} alt="Math formula" width="120" height="114" />
           </section>
 
           <section>
@@ -448,29 +454,14 @@ export default function Page() {
               {formula('r(y,x)')}. The human preference distribution can be
               written as 
             </p>
-            <Image
-              src="/math/math_3.jpg"
-              alt="Math formula"
-              width="344"
-              height="67"
-            />
+            <Image src={Math3} alt="Math formula" width="344" height="67" />
             <p>
               The objective function of the reward model over a dataset D is
               framed as
             </p>
-            <Image
-              src="/math/math_4.jpg"
-              alt="Math formula"
-              width="389"
-              height="58"
-            />
+            <Image src={Math4} alt="Math formula" width="389" height="58" />
             <p>The objective function of the LLM can then be written as</p>
-            <Image
-              src="/math/math_5.jpg"
-              alt="Math formula"
-              width="407"
-              height="63"
-            />
+            <Image src={Math5} alt="Math formula" width="407" height="63" />
             <p className={styles.inlineRow}>
               where {subscript('D', 'kl')} represents the KL divergence between
               the reference policy and the language model policy to optimize.
@@ -479,45 +470,20 @@ export default function Page() {
               It can be shown the language model policy has a closed-form
               solution
             </p>
-            <Image
-              src="/math/math_14.jpg"
-              alt="Math formula"
-              width="266"
-              height="153"
-            />
+            <Image src={Math14} alt="Math formula" width="266" height="153" />
             <p className={styles.inlineRow}>
               where {formula('Z(x)')} is the normalizing factor
             </p>
-            <Image
-              src="/math/math_15.jpg"
-              alt="Math formula"
-              width="237"
-              height="74"
-            />
+            <Image src={Math15} alt="Math formula" width="237" height="74" />
             <p>Rearranging, we end up with</p>
-            <Image
-              src="/math/math_16.jpg"
-              alt="Math formula"
-              width="297"
-              height="87"
-            />
+            <Image src={Math16} alt="Math formula" width="297" height="87" />
             <p>
               Plugging this into the human preference distribution, we end up
               with
             </p>
-            <Image
-              src="/math/math_17.jpg"
-              alt="Math formula"
-              width="356"
-              height="67"
-            />
+            <Image src={Math17} alt="Math formula" width="356" height="67" />
             <p>The DPO objective function can then be written as</p>
-            <Image
-              src="/math/math_18.jpg"
-              alt="Math formula"
-              width="521"
-              height="63"
-            />
+            <Image src={Math18} alt="Math formula" width="521" height="63" />
             <p>
               The above can be conveniently optimized by any gradient-based
               optimization method without having to resort to RL.
@@ -563,7 +529,7 @@ export default function Page() {
             </p>
           </section>
 
-          <section>
+          <section className="hidden">
             <h2>QNAI Allocations</h2>
             <table>
               <thead>
@@ -664,73 +630,6 @@ export default function Page() {
               </tbody>
             </table>
           </section>
-
-          {/* 
-          <p>Automatic Fine Tuning</p>
-          <p>
-            Q*.ai enables token holders, including those without technical
-            expertise, to earn rewards through a straightforward token staking
-            process. During each epoch, Q*.ai utilizes available supervised
-            fine-tuning and human preference data to enhance existing LLMs
-            continuously. This process involves a seamless integration of data
-            injection and model refinement. The rewards generated from the
-            improved model are then distributed among participating token
-            stakers. The fine-tuning of these models incorporates supervised
-            fine-tuning and direct preference optimization. We prefer direct
-            preference optimization over Reinforcement Learning from Human
-            Feedback (RLHF) for its stability and faster convergence. A detailed
-            explanation of our direct optimization learning algorithm is
-            provided below.
-          </p>
-          <p>Directed Preference Optimization in a Nutshell</p>
-          <p>
-            Let D = {`{(xi, yiw, yil)}`} be a sample instance from the human
-            preference dataset, where x denotes user prompt, ym, yl denote the
-            preferred and dispreferred completion from human label. The
-            preferences are assumed to be generated by a latent reward model
-            r(y,x). The human preference distribution can be written as
-          </p>
-          <Image
-            src="/math/math_3.jpg"
-            alt="Math formula"
-            width="287"
-            height="56"
-          />
-          <p>
-            The objective function of the reward model over a dataset D is
-            framed as
-          </p>
-          <Image
-            src="/math/math_4.jpg"
-            alt="Math formula"
-            width="389"
-            height="58"
-          />
-          <p>The objective function of the LLM can then be written as</p>
-          <Image
-            src="/math/math_5.jpg"
-            alt="Math formula"
-            width="407"
-            height="63"
-          />
-          <p>
-            where DKL represents the KL divergence between the reference policy
-            and the language model policy to optimize. <br></br>It can be shown
-            the language model policy has a closed-form solution
-          </p>
-          <Image
-            src="/math/math_6.jpg"
-            alt="Math formula"
-            width="274"
-            height="49"
-          />
-          <p>where Z(x) is the normalizing factor</p>
-          <Image
-            src="/math/math_7.jpg"
-            alt="Math formula"
-            width="299"
-            height="79"
-          /> */}
         </div>
       </div>
       <Back />

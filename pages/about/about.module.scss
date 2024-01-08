@@ -7,7 +7,7 @@
 
   /* Add right background image using comma-separated values */
   background-image: url('/about_bg1.jpg'), url('/about_bg2.jpg');
-  background-position: left 10rem, right 10rem; /* Left top corner, Right top corner */
+  background-position: -8rem 10rem, calc(100% + 8rem) 10rem; /* Left top corner, Right top corner */
   background-size: 34rem 52.6rem, 33.9rem 52.5rem; /* Set specific size for each image */
   background-repeat: no-repeat, no-repeat;
   background-attachment: fixed;
