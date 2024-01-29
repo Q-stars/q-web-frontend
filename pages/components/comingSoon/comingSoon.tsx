@@ -8,7 +8,7 @@ const CoomingSoon = ({ index }: { index: string }) => {
   return (
     <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
       <Layout>
-        <div className={styles.text}>Comming Soon...</div>
+        <div className={styles.text}>Coming Soon...</div>
       </Layout>
     </div>
   )

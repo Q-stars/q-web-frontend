@@ -18,7 +18,7 @@ export default function Page() {
             <p>
               Highlights the challenges small to medium-sized businesses face in
               AI integration, especially those outside the IT sector, and
-              Informy.ai’s role in democratizing AI utilization.
+              Q-stars’ role in democratizing AI utilization.
             </p>
           </section>
 
@@ -27,16 +27,16 @@ export default function Page() {
             <p>
               Discusses the potential of businesses, like restaurants, to
               transform operations by analyzing and utilizing their own data
-              effectively, a core capability provided by Informy.ai.
+              effectively, a core capability provided by Q-stars.
             </p>
           </section>
 
           <section>
             <h2>Making Large Language Models Accessible to All</h2>
             <p>
-              Describes Informy.ai’s mission to provide SMBs with user-friendly
-              AI tools, bridging the gap between advanced technology and
-              practical business applications.
+              Describes Q-stars’ mission to provide SMBs with user-friendly AI
+              tools, bridging the gap between advanced technology and practical
+              business applications.
             </p>
           </section>
 
@@ -65,29 +65,27 @@ export default function Page() {
           <section>
             <h2>Staying Ahead with Community-Driven Innovations</h2>
             <p>
-              Addresses the evolving landscape of LLM development and
-              Informy.ai’s strategy to stay ahead through community proposals
-              and adapting to the latest trends in lighter LLMs, multi-modal
-              models, and more.
+              Addresses the evolving landscape of LLM development and Q-stars’
+              strategy to stay ahead through community proposals and adapting to
+              the latest trends in lighter LLMs, multi-modal models, and more.
             </p>
           </section>
 
           <section>
             <h2>Staying Ahead with Community-Driven Innovations</h2>
             <p>
-              Addresses the evolving landscape of LLM development and
-              Informy.ai’s strategy to stay ahead through community proposals
-              and adapting to the latest trends in lighter LLMs, multi-modal
-              models, and more.
+              Addresses the evolving landscape of LLM development and Q-stars’
+              strategy to stay ahead through community proposals and adapting to
+              the latest trends in lighter LLMs, multi-modal models, and more.
             </p>
           </section>
 
           <section>
             <h2>A Revolutionary Platform for Collaborative AI Innovation</h2>
             <p>
-              Concludes by positioning Informy.ai as a pioneer in democratizing
-              LLM access and fostering innovation and collaboration within the
-              ML community.
+              Concludes by positioning Q-stars as a pioneer in democratizing LLM
+              access and fostering innovation and collaboration within the ML
+              community.
             </p>
           </section>
         </div>
